@@ -78,7 +78,7 @@ function Room:new( )
     self.tileset = resourceManager:getImage(tilesetData.name)
     self.tileSize.w = tilesetData.tilewidth
     self.tileSize.h = tilesetData.tileheight
-    self.tsQuads = resourceManager:getQuads(self.tileset, self.tileSize.w, self.tileSize.h, spacing, margin)
+    self.tsQuads = resourceManager:getQuads(self.tileset, self.tileSize.w, self.tileSize.h, margin, spacing)
     self.mapSize.w  = mapFile.width
     self.mapSize.h  = mapFile.height
 

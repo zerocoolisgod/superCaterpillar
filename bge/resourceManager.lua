@@ -64,11 +64,11 @@ function rsm:getImage (id)
   end
 end
 
-function rsm:getQuads (img, width, height, buffer, margin)
+function rsm:getQuads (img, width, height, margin, spacing)
   -- Cut quads
   local frameWidth = width
   local frameHeight = height
-  local b = buffer or 0
+  local s = spacing or 0
   local m = margin or 0
   local imageWidth = img:getWidth()
   local imageHeight = img:getHeight()
@@ -78,10 +78,10 @@ function rsm:getQuads (img, width, height, buffer, margin)
   -- Position in image is based on cells,
   -- frame size is the size of the tile or spriteframe.
   -- If we are using a buffered sprite sheet then the cell
-  -- will be the size of the frame + 2 buffer on all 4 sides,
-  -- or cx=fx+b*2 cy=fy+b*2
-  local cellWidth = frameWidth + b
-  local cellHeight = frameHeight + b
+  -- will be the size of the frame + 2*spacing on all 4 sides,
+  -- or cx=fx+s*2 cy=fy+s*2
+  local cellWidth = frameWidth + s
+  local cellHeight = frameHeight + s
 
   local numberWide = imageWidth / cellWidth
   local numberHigh = imageHeight / cellHeight
@@ -89,7 +89,7 @@ function rsm:getQuads (img, width, height, buffer, margin)
   -- Cut tile sheet into quads
   for y = 1, numberHigh do
     for x = 1, numberWide do
-      -- add buffer to whole thing to get the first position off
+      -- add margin to whole thing to get the first position off
       -- of the 0x and 0y
       local xpos = ((x-1) * (cellWidth)) + m
       local ypos = ((y-1) * (cellWidth)) + m

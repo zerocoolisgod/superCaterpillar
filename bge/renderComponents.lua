@@ -77,9 +77,15 @@ function renSys:addSprite(ent, sheet, width, height, quad)
     love.event.quit()
   end
 
+  local margin,spacing = 0, 0
+  if _USE_BUFFERED_SPRITESHEETS then
+    margin = 1
+    spacing = 2
+  end
+
 	ent.sheet = sheet
   ent.frame = quad or 1
-  ent.quads = RESMAN:getQuads(sheet, width, height)
+  ent.quads = RESMAN:getQuads(sheet, width, height, margin, spacing)
 	ent.scale = {x = 1, y = 1}
 	ent.radian = 0
   ent.orig = {x = width/2, y = height/2}

@@ -5,6 +5,8 @@ local lgr = love.graphics.rectangle
 local lgp = love.graphics.print
 local setColor = love.graphics.setColor
 
+_USE_BUFFERED_SPRITESHEETS = false
+
 
 -------------------------------------------------------------------------------
 -- Load Function
@@ -13,6 +15,7 @@ function love.load(arg)
   -- Graphics
   love.graphics.setDefaultFilter('nearest')
   love.graphics.setBackgroundColor(0.5, 0.5, 0.5, 1)
+  _USE_BUFFERED_SPRITESHEETS = true
   
 
   -- Audio
