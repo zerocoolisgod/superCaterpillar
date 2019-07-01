@@ -10,7 +10,12 @@ return {
   tileheight = 8,
   nextlayerid = 4,
   nextobjectid = 16,
-  properties = {},
+  backgroundcolor = { 68, 68, 68 },
+  properties = {
+    ["x"] = 1,
+    ["y"] = 1,
+    ["z"] = 1
+  },
   tilesets = {
     {
       name = "cpillarTiles",
@@ -322,11 +327,7 @@ return {
           height = 8,
           rotation = 0,
           visible = true,
-          properties = {
-            ["x"] = 1,
-            ["y"] = 1,
-            ["z"] = 1
-          }
+          properties = {}
         }
       }
     }

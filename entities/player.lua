@@ -28,8 +28,8 @@ function ent:new(x,y)
   renderComponents:addSprite(e, sheet, 8, 8)
   e:setSpriteOffset(0,-1)
   logicComponents:addAnimation(e, "idle", {1}, 999)
-  logicComponents:addAnimation(e, "walkHorz", {3, 1, 2, 1}, 0.6)
-  logicComponents:addAnimation(e, "walkVert", {3, 1, 2, 1}, 0.6)
+  logicComponents:addAnimation(e, "walkHorz", {2,3,2,1}, 0.6)
+  logicComponents:addAnimation(e, "walkVert", {5,6,5,4}, 0.6)
 
   e:setAnimation("idle")
   camera:setFocus(e)
@@ -50,15 +50,14 @@ function ent:new(x,y)
     function(self, dt)
       -- Exit State
       local nstate
+      if self:inputIsDown("up") then nstate = 'walk' end
+      if self:inputIsDown("down") then nstate = 'walk' end
       if self:inputIsDown("left") then nstate = 'walk' end
       if self:inputIsDown("right") then nstate = 'walk' end
-      if self:inputIsDown("down") then nstate = 'duck' end
-      if self:inputIsPressed("btnB") then nstate = 'jump' end
-      if not self:checkWall(0, 1) then nstate = 'fall' end
       if nstate then self:setState(nstate) end
       
-      local spdX, spdY = 0, 90
-      local accelX, accelY = 0.09, 0.02
+      local spdX, spdY = 0, 0
+      local accelX, accelY = 0.09, 0.09
       self:move(spdX, spdY, accelX, accelY, dt)
     end)
   
