@@ -57,7 +57,7 @@ function ent:new(x,y)
       if nstate then self:setState(nstate) end
       
       local spdX, spdY = 0, 0
-      local accelX, accelY = 0.09, 0.09
+      local accelX, accelY = 0.1, 0.1
       self:move(spdX, spdY, accelX, accelY, dt)
     end)
   
@@ -73,7 +73,7 @@ function ent:new(x,y)
     function(self, dt)
       -- Movement
       local spdX, spdY = 90, 90
-      local accelX, accelY = 0.09, 0.02
+      local accelX, accelY = 0.1, 0.1
       local dirX, dirY = 0, 0
       if self:inputIsDown("up") then dirY = -1 end
       if self:inputIsDown("down") then dirY = 1 end
