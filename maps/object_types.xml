@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objecttypes>
+ <objecttype name="player" color="#4eadff"/>
+ <objecttype name="stageGate" color="#5500ff"/>
+ <objecttype name="wall" color="#ff0004"/>
+</objecttypes>
