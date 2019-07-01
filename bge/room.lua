@@ -87,7 +87,7 @@ function Room:new( )
     end
 
     self:addTiles(mapFile.layers[layerNumber].data)
-    self:makeSpriteBatch()
+    self:makeSpriteBatch(layerNumber)
   end
 
 
@@ -102,13 +102,15 @@ function Room:new( )
   end
 
 
-  function e:makeSpriteBatch(posX, posY, screenW, screenH)
+  function e:makeSpriteBatch(mapLayer, posX, posY, screenW, screenH)
     posX = posX or 1
     posY = posY or 1
+    layer = mapLayer or 1
     screenW = screenW or self.mapSize.w
     screenH = screenH or self.mapSize.h
-    self.tileBatch = love.graphics.newSpriteBatch(self.tileset)
-    self.tileBatch:clear()
+    if not self.tileBatch then self.tileBatch = {} end
+    self.tileBatch[layer] = love.graphics.newSpriteBatch(self.tileset)
+    self.tileBatch[layer]:clear()
     for y = posY, screenH do
       for x = posX, screenW do
         if self.tileMap[x][y] ~= 0 then
@@ -116,7 +118,7 @@ function Room:new( )
           local quad = self.tsQuads[quadID]
           local posX = (x - 1) * self.tileSize.w
           local posY = (y - 1) * self.tileSize.h
-          self.tileBatch:add(quad, posX, posY)
+          self.tileBatch[layer]:add(quad, posX, posY)
         end
       end
     end
@@ -156,7 +158,11 @@ function Room:new( )
     end
     x = x or 0
     y = y or 0
-    if self.tileBatch then lgDraw(self.tileBatch,x,y) end
+    if self.tileBatch then 
+      for l=1,#self.tileBatch do
+        lgDraw(self.tileBatch[l], x, y) 
+      end
+    end
     entitySystem:drawEnts()
   end
 
