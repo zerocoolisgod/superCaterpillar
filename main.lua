@@ -52,7 +52,8 @@ function love.load(arg)
   GSTMAN:addState("unloadStage", require("gameStates.unloadStage"))
   GSTMAN:addState("endGame", require("gameStates.endGame"))
   GSTMAN:addState("dev", require("gameStates.dev"))
-  
+
+  --set game state
   GSTMAN:setState("loadGame")
 end
 
