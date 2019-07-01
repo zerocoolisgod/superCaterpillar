@@ -2,7 +2,7 @@
 -- Localized Another Test
 local volume = 0.5
 local lgr = love.graphics.rectangle
-local lgp = love.graphic.print
+local lgp = love.graphics.print
 local setColor = love.graphics.setColor
 
 _USE_BUFFERED_SPRITESHEETS = falses
