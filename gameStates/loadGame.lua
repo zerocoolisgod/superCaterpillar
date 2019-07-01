@@ -57,9 +57,10 @@ function state:initCamera()
   local gba = {x = 240, y = 160} --(30x20) 8x8 pixel sprites
   local tpg = {x = 320, y = 180} --(40x22) 8x8 pixel sprites
   local camRes = tpg
-  local windowScale = 2
+  local windowScale = 4
   local windowSize = {x = camRes.x * windowScale, y = camRes.y * windowScale}
-  local fullscreenSize = {x = 1366, y = 768}
+  --local fullscreenSize = {x = 1366, y = 768}
+  local fullscreenSize = {x = 1920, y = 1080}
   local mode = "window"
 
   camera:init()
