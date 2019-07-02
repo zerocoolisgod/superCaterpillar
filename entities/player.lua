@@ -26,10 +26,10 @@ function ent:new(x,y)
   logicComponents:addCollision(e, true)
 
   renderComponents:addSprite(e, sheet, 8, 8)
-  e:setSpriteOffset(0,-1)
+  e:setSpriteOffset(0, -1)
   logicComponents:addAnimation(e, "idle", {1}, 999)
-  logicComponents:addAnimation(e, "walkHorz", {2,3,2,1}, 0.6)
-  logicComponents:addAnimation(e, "walkVert", {5,6,5,4}, 0.6)
+  logicComponents:addAnimation(e, "walkHorz", {1, 2, 3, 2}, 0.6)
+  logicComponents:addAnimation(e, "walkVert", {4, 5, 6, 5}, 0.6)
 
   e:setAnimation("idle")
   camera:setFocus(e)
@@ -72,7 +72,7 @@ function ent:new(x,y)
 
     function(self, dt)
       -- Movement
-      local spdX, spdY = 90, 90
+      local spdX, spdY = 50, 50
       local accelX, accelY = 0.1, 0.1
       local dirX, dirY = 0, 0
       if self:inputIsDown("up") then dirY = -1 end
@@ -84,8 +84,13 @@ function ent:new(x,y)
 
       self:move(spdX, spdY, accelX, accelY, dt)
 
-      -- Sprite Facing
-      if dirX ~= 0 then self:setSpriteScale(dirX, 1) end
+      -- Sprite Facing and animation
+      local fx, fy, nAnm = 1, 1, 'walkHorz'
+      if dirX ~= 0 then fx, fy, nAnm = dirX, 1, 'walkHorz' end
+      if dirY ~= 0 then fx, fy, nAnm = 1, dirY, 'walkVert' end
+      self:setSpriteScale(fx, fy)
+      self:setAnimation('walkVert')
+      
 
       -- Exit State
       local nstate

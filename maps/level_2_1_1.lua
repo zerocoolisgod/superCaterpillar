@@ -12,7 +12,7 @@ return {
   nextobjectid = 16,
   backgroundcolor = { 68, 68, 68 },
   properties = {
-    ["x"] = 1,
+    ["x"] = 2,
     ["y"] = 1,
     ["z"] = 1
   },
