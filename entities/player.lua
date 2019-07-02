@@ -27,11 +27,12 @@ function ent:new(x,y)
 
   renderComponents:addSprite(e, sheet, 8, 8)
   e:setSpriteOffset(0, -1)
-  logicComponents:addAnimation(e, "idle", {1}, 999)
+  logicComponents:addAnimation(e, "idleHorz", {1}, 99)
+  logicComponents:addAnimation(e, "idleVert", {4}, 99)
   logicComponents:addAnimation(e, "walkHorz", {1, 2, 3, 2}, 0.6)
   logicComponents:addAnimation(e, "walkVert", {4, 5, 6, 5}, 0.6)
 
-  e:setAnimation("idle")
+  e:setAnimation("idleHorz")
   camera:setFocus(e)
   logicComponents:addOnUpdate(e, function(self, dt)
     
@@ -44,7 +45,10 @@ function ent:new(x,y)
   -------------------------------------
   logicComponents:addState(e,'idle',
     function(self)
-      self:setAnimation('idle')
+      local pAnm = self:getAnimation()
+      local nAnm = 'idleHorz'
+      if pAnm == "walkVert" then nAnm = "idleVert" end
+      self:setAnimation(nAnm)
     end,
 
     function(self, dt)
@@ -85,9 +89,11 @@ function ent:new(x,y)
       self:move(spdX, spdY, accelX, accelY, dt)
 
       -- Sprite Facing and animation
-      local fx, fy, nAnm = 1, 1, 'walkHorz'
-      if dirX ~= 0 then fx, fy, nAnm = dirX, 1, 'walkHorz' end
-      if dirY ~= 0 then fx, fy, nAnm = 1, dirY, 'walkVert' end
+      local fx, fy = self:getSpriteScale()
+      local nAnm = self:getAnimation()
+      if dirX ~= 0 then fx, nAnm = dirX, 'walkHorz' end
+      if dirY ~= 0 then fy, nAnm = dirY, 'walkVert' end
+      if nAnm == 'walkHorz' then fy = 1 end
       self:setSpriteScale(fx, fy)
       self:setAnimation(nAnm)
       
