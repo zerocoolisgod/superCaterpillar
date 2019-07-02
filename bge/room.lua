@@ -126,8 +126,10 @@ function Room:new( )
 
 
   function e:loadObjectLayer()
+
     local objlay = self.objectLayer
     local ents={}
+    
     for i=1,#objlay do
       local type = objlay[i].type
       local x = objlay[i].x
@@ -138,9 +140,14 @@ function Room:new( )
       local o = resourceManager:getNewEntity(type, x, y, w, h, props)
       table.insert(ents, o)
     end
-    entitySystem:registerEntityTable(ents)
+    self.ents = {}
+    self.ents = ents
   end
-  
+
+
+  function e:getRoomEntities()
+    return self.ents
+  end
 
   function e:update(dt)
     entitySystem:updateEnts(dt)

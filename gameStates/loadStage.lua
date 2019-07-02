@@ -31,7 +31,18 @@ function state:init()
   
   local wx,wy,wz = gameData:getWorldPosition()
   local room = overWorld:getRoom(wx,wy,wz)
+  local ents ={}
   room:activateRoom()
+  ents = room:getRoomEntities()
+  entitySystem:registerEntityTable(ents)
+
+  local fruitCount = 0
+  for e=1,#ents do
+    if ents[e].type == fruit then fruitCount = fruitCount + 1 end
+  end
+
+
+  gameData:setData("levelFruit", fruitCount)
   gameStateManager:setState("playStage")
 end
 

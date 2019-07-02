@@ -13,6 +13,7 @@ _USE_BUFFERED_SPRITESHEETS = falses
 -- Load Function
 -------------------------------------------------------------------------------
 function love.load(arg)
+   
   -- Graphics
   love.graphics.setDefaultFilter('nearest')
   love.graphics.setBackgroundColor(0.5, 0.5, 0.5, 1)

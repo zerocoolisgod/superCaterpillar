@@ -15,6 +15,7 @@ local resMan = RESMAN
 local g = {}
 g.worldPos = {x = 1,y = 1,z = 1}
 g.nextWorldPos = {x = 1,y = 1,z = 1}
+g.userData = {}
 
 
 function g:getWorldPosition( )
@@ -39,5 +40,22 @@ function g:setNextWorldPosition(x,y,z)
   self.nextWorldPos.y = y
   self.nextWorldPos.z = z
 end
+
+---------------------------------------
+-- USER DATA storage and retrieval
+function g:setData(id, value)
+  self.userData[id] = value
+end
+
+function g:getData(id)
+  if not self.userData[id] then 
+    love.errhand(id.." does not exist")
+    love.event.quit()
+  end
+
+  return self.userData[id]
+ 
+end
+
 
 return g

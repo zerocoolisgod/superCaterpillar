@@ -54,8 +54,7 @@ end
 function state:initCamera()
   love.window.setMode(0, 0)
   local screenWidth, screenHeight = love.graphics.getDimensions()
-  print(screenWidth.."X"..screenHeight)
-  
+    
   local nes = {x = 256, y = 240} --(32x30) 8x8 pixel sprites
   local gbc = {x = 160, y = 144} --(20x18) 8x8 pixel sprites
   local gba = {x = 240, y = 160} --(30x20) 8x8 pixel sprites

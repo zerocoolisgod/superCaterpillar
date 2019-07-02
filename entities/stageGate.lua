@@ -20,11 +20,22 @@ local ent = {}
 
 function ent:new(x, y, w, h, props)
   local e = ENTSYS:newEnt(x, y, w, h)
+  local sheet = resourceManager:getImage("smallEntSheet")
+
   e:setId("Stage Gate")
   e:setGroup("stageGate")
   e.gateTo = props
   logicComponents:addCollision(e, true)
-  renderComponents:addRectangle(e,{0.5, 0.10, 0.5})
+  
+  renderComponents:addSprite(e, sheet, 8, 8)
+  logicComponents:addAnimation(e, "closed", {5}, 99)
+  logicComponents:addAnimation(e, "open", {6}, 99)
+  e.open = false
+
+  logicComponents:addOnUpdate(e, function(self, dt)
+    local fruit = gameData:getData("levelFruit")
+    if fruit < 1 then self.open = true end
+  end)
   
   function e:onBump(o)
     local x,y,z = self.gateTo.x, self.gateTo.y, self.gateTo.z
