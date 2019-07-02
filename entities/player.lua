@@ -89,7 +89,7 @@ function ent:new(x,y)
       if dirX ~= 0 then fx, fy, nAnm = dirX, 1, 'walkHorz' end
       if dirY ~= 0 then fx, fy, nAnm = 1, dirY, 'walkVert' end
       self:setSpriteScale(fx, fy)
-      self:setAnimation('walkVert')
+      self:setAnimation(nAnm)
       
 
       -- Exit State
