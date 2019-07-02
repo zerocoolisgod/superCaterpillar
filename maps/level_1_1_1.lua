@@ -9,7 +9,7 @@ return {
   tilewidth = 8,
   tileheight = 8,
   nextlayerid = 7,
-  nextobjectid = 16,
+  nextobjectid = 17,
   backgroundcolor = { 68, 68, 68 },
   properties = {
     ["x"] = 1,
@@ -127,7 +127,7 @@ return {
       type = "objectgroup",
       id = 2,
       name = "Object Layer 1",
-      visible = true,
+      visible = false,
       opacity = 1,
       offsetx = 0,
       offsety = 0,
@@ -328,6 +328,23 @@ return {
           rotation = 0,
           visible = true,
           properties = {}
+        },
+        {
+          id = 16,
+          name = "",
+          type = "stageGate",
+          shape = "rectangle",
+          x = 272,
+          y = 40,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["x"] = 2,
+            ["y"] = 1,
+            ["z"] = 1
+          }
         }
       }
     }
