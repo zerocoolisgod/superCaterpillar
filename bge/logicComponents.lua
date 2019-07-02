@@ -79,11 +79,22 @@ function logSys:addAnimation(ent, aId, frms, dly)
 	ent.cAnm = aId
 	ent.nAnm = aId
 	
+
+	-------------------------------------
+	-- Setters
 	ent.setAnimation = function(self,a)
 		self.nAnm = a
 	end
+
+
+	-------------------------------------
+	-- Getters
+	ent.getAnimation = function(self,a)
+		return self.cAnm
+	end
 	
-	
+	-------------------------------------
+	--Update Function
 	ent:addLogSys(function(self, dt)
 		local anm
 		local sprt
