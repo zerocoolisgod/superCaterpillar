@@ -52,15 +52,19 @@ end
 
 
 function state:initCamera()
+  love.window.setMode(0, 0)
+  local screenWidth, screenHeight = love.graphics.getDimensions()
+  print(screenWidth.." "..screenHeight)
+  
   local nes = {x = 256, y = 240} --(32x30) 8x8 pixel sprites
   local gbc = {x = 160, y = 144} --(20x18) 8x8 pixel sprites
   local gba = {x = 240, y = 160} --(30x20) 8x8 pixel sprites
   local tpg = {x = 320, y = 180} --(40x22) 8x8 pixel sprites
   local camRes = tpg
-  local windowScale = 4
+  local windowScale = 3
   local windowSize = {x = camRes.x * windowScale, y = camRes.y * windowScale}
   --local fullscreenSize = {x = 1366, y = 768}
-  local fullscreenSize = {x = 1920, y = 1080}
+  local fullscreenSize = {x = screenWidth, y = screenHeight}
   local mode = "window"
 
   camera:init()
