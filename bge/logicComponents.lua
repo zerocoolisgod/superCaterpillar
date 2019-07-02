@@ -126,7 +126,12 @@ function logSys:addCollision(ent, solid)
 	-- still get onBump() response.
 	ent.collidable = true
 	ent.solid = solid
-	ent.onBump = function(self, other) end
+	
+	function ent:setSolid(b)
+		self.solid = b
+	end
+
+	function ent:onBump (self, other) end
 end
 
 

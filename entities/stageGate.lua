@@ -30,17 +30,23 @@ function ent:new(x, y, w, h, props)
   renderComponents:addSprite(e, sheet, 8, 8)
   logicComponents:addAnimation(e, "closed", {5}, 99)
   logicComponents:addAnimation(e, "open", {6}, 99)
+  e:setAnimation("closed")
   e.open = false
 
   logicComponents:addOnUpdate(e, function(self, dt)
     local fruit = gameData:getData("levelFruit")
-    if fruit < 1 then self.open = true end
+    if fruit < 1 then 
+      self.open = true
+      self:setAnimation("open")
+    end
   end)
   
   function e:onBump(o)
-    local x,y,z = self.gateTo.x, self.gateTo.y, self.gateTo.z
-    gameData:setNextWorldPosition(x,y,z)
-    gameStateManager:setState('loadStage')
+    if self.open then
+      local x,y,z = self.gateTo.x, self.gateTo.y, self.gateTo.z
+      gameData:setNextWorldPosition(x,y,z)
+      gameStateManager:setState('loadStage')
+    end
   end
 
   return e

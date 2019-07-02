@@ -11,7 +11,6 @@ function ent:new(x,y,w,h,props)
   e:setId("wall")
   e:setGroup("wall")
   logicComponents:addCollision(e, true)
-  --renderComponents:addRectangle(e)
   return e
 end
 
