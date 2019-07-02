@@ -90,34 +90,59 @@ function renSys:addSprite(ent, sheet, width, height, quad)
 	ent.radian = 0
   ent.orig = {x = width/2, y = height/2}
 	ent.offset = {x = 0, y = 0}
-    
+	
+	
+	-------------------------------------
+	--Setters
   function ent:setSpriteScale(x, y)
 		self.scale.x = x or 1
     self.scale.y = y or x or 1
 	end
-	
-  
+	  
 	function ent:setSpriteAlpha(c)
 		self.colorkey = c or 0
 	end
-	
-  
+	  
 	function ent:setSpriteRadian(r)
 		self.radian = r or 0
 	end
-  
-  
+    
   function ent:setSpriteOffset(x,y)
 		self.offset.x = x or 0
     self.offset.y = y or x or 0
 	end
-
-  
+	
   function ent:setFrame(f)
     if f > #self.quads then f = 1 end
     self.frame = f or 1
+	end
+	
+
+	-------------------------------------
+	--Getters
+	function ent:getSpriteScale()
+		return self.scale.x, self.scale.y
+	end
+	  
+	function ent:getSpriteAlpha()
+		return self.colorkey
+	end
+	  
+	function ent:getSpriteRadian()
+		return self.radian
+	end
+    
+  function ent:getSpriteOffset()
+		return self.offset.x, self.offset.y
+	end
+  
+  function ent:getFrame()
+    return self.frame
   end
-		
+	
+
+	-------------------------------------
+	-- Drawing function
 	ent:addRenSys(function(e)
 		-- drawable (quad) x y radian scaleX scaleY originX originY
     local q = e.quads[e.frame]
