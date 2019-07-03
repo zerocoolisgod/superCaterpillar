@@ -28,6 +28,7 @@ end
 
 function state:draw()
   self.room:draw()
+  love.graphics.print(gameData:getData("levelFruit"),16,16)
 end
 
 

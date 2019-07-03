@@ -9,7 +9,7 @@ return {
   tilewidth = 8,
   tileheight = 8,
   nextlayerid = 7,
-  nextobjectid = 17,
+  nextobjectid = 19,
   backgroundcolor = { 68, 68, 68 },
   properties = {
     ["x"] = 1,
@@ -344,6 +344,36 @@ return {
             ["x"] = 2,
             ["y"] = 1,
             ["z"] = 1
+          }
+        },
+        {
+          id = 17,
+          name = "apple",
+          type = "fruit",
+          shape = "rectangle",
+          x = 40,
+          y = 72,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["fruitType"] = 1
+          }
+        },
+        {
+          id = 18,
+          name = "apple",
+          type = "fruit",
+          shape = "rectangle",
+          x = 72,
+          y = 72,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["fruitType"] = 1
           }
         }
       }

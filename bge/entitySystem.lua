@@ -33,7 +33,7 @@ end
 -------------------------------------------------------------------------------
 function entSys:updateEnts(dt)
 	for i = #self.ents, 1, -1 do
-		if self.ents.remove then 
+		if self.ents[i].remove then 
 			table.remove(self.ents, i)
 		end
 	end

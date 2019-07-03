@@ -38,7 +38,7 @@ function state:init()
 
   local fruitCount = 0
   for e=1,#ents do
-    if ents[e].type == "fruit" then fruitCount = fruitCount + 1 end
+    if ents[e].group == "fruit" then fruitCount = fruitCount + 1 end
   end
 
 
