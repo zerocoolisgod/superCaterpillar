@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="40" height="22" tilewidth="8" tileheight="8" infinite="0" backgroundcolor="#444444" nextlayerid="7" nextobjectid="17">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="40" height="22" tilewidth="8" tileheight="8" infinite="0" backgroundcolor="#444444" nextlayerid="7" nextobjectid="18">
  <properties>
   <property name="x" type="int" value="1"/>
   <property name="y" type="int" value="1"/>
@@ -58,7 +58,7 @@
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 </data>
  </layer>
- <objectgroup id="2" name="Object Layer 1" visible="0">
+ <objectgroup id="2" name="Object Layer 1">
   <object id="1" type="wall" x="184" y="40" width="56" height="24"/>
   <object id="2" type="wall" x="56" y="32" width="40" height="24"/>
   <object id="3" type="wall" x="200" y="72" width="16" height="56"/>
@@ -81,5 +81,6 @@
     <property name="z" type="int" value="1"/>
    </properties>
   </object>
+  <object id="17" name="apple" type="fruit" x="40" y="72" width="8" height="8"/>
  </objectgroup>
 </map>
