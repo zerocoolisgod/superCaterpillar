@@ -9,10 +9,10 @@ return {
   tilewidth = 8,
   tileheight = 8,
   nextlayerid = 7,
-  nextobjectid = 20,
+  nextobjectid = 24,
   backgroundcolor = { 68, 68, 68 },
   properties = {
-    ["x"] = 2,
+    ["x"] = 6,
     ["y"] = 1,
     ["z"] = 1
   },
@@ -139,8 +139,8 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
-          x = -48,
-          y = 48,
+          x = -56,
+          y = 56,
           width = 40,
           height = 24,
           rotation = 0,
@@ -218,13 +218,13 @@ return {
           type = "stageGate",
           shape = "rectangle",
           x = 152,
-          y = 56,
+          y = 64,
           width = 8,
           height = 8,
           rotation = 0,
           visible = true,
           properties = {
-            ["x"] = 3,
+            ["x"] = 7,
             ["y"] = 1,
             ["z"] = 1
           }
@@ -234,14 +234,14 @@ return {
           name = "fruit",
           type = "fruit",
           shape = "rectangle",
-          x = 112,
+          x = 136,
           y = 88,
           width = 8,
           height = 8,
           rotation = 0,
           visible = true,
           properties = {
-            ["fruitType"] = 2
+            ["fruitType"] = 6
           }
         },
         {
@@ -249,14 +249,74 @@ return {
           name = "fruit",
           type = "fruit",
           shape = "rectangle",
-          x = 184,
+          x = 152,
           y = 88,
           width = 8,
           height = 8,
           rotation = 0,
           visible = true,
           properties = {
-            ["fruitType"] = 2
+            ["fruitType"] = 6
+          }
+        },
+        {
+          id = 20,
+          name = "fruit",
+          type = "fruit",
+          shape = "rectangle",
+          x = 168,
+          y = 88,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["fruitType"] = 6
+          }
+        },
+        {
+          id = 21,
+          name = "fruit",
+          type = "fruit",
+          shape = "rectangle",
+          x = 136,
+          y = 104,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["fruitType"] = 6
+          }
+        },
+        {
+          id = 22,
+          name = "fruit",
+          type = "fruit",
+          shape = "rectangle",
+          x = 152,
+          y = 104,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["fruitType"] = 6
+          }
+        },
+        {
+          id = 23,
+          name = "fruit",
+          type = "fruit",
+          shape = "rectangle",
+          x = 168,
+          y = 104,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {
+            ["fruitType"] = 6
           }
         }
       }

@@ -19,7 +19,7 @@ local state = {}
 
 function state:init()
   self:initResourceManager()
-  overWorld:setMapSize(5,5,3)
+  overWorld:setMapSize(16,4,1)
   overWorld:loadMaps("maps")
   gameData:setWorldPosition(1,1,1)
   self:initCamera()
