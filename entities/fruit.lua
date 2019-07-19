@@ -18,7 +18,7 @@ local renderComponents = require("bge.renderComponents")
 
 local ent = {}
 function ent:new(x, y, w, h, props)
-  local e = ENTSYS:newEnt(x, y, w, h)
+  local e = ENTSYS:newEnt(x, y, 8, 8)
   local sheet = resourceManager:getImage("foodSheet")
   
   e:setId("fruit")
