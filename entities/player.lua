@@ -22,7 +22,6 @@ function ent:new(x,y)
   e:setId("player")
   e:setGroup("player")
   
-  logicComponents:addInputs(e)
   logicComponents:addMovement(e)
   logicComponents:addCollision(e, true)
 
