@@ -24,8 +24,6 @@ end
 
 
 function state:update(dt)
-  -- local key = love.keyboard.isDown('space')
-  -- if key then gameStateManager:setState('loadStage') end
   if inputs:isPressed("start") then gameStateManager:setState('loadStage') end
 end
 
