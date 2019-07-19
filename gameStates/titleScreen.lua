@@ -10,6 +10,8 @@ local camera            = CAMERA
 local resourceManager   = RESMAN
 local gameData          = GAMDAT
 local overWorld         = OVRWLD
+local inputs						= INPUTS
+
 local lgp = love.graphics.print
 local ran = love.math.random
 local nesCP = require("bge.palette")
@@ -22,8 +24,9 @@ end
 
 
 function state:update(dt)
-  local key = love.keyboard.isDown('space')
-  if key then gameStateManager:setState('loadStage') end
+  -- local key = love.keyboard.isDown('space')
+  -- if key then gameStateManager:setState('loadStage') end
+  if inputs:isPressed("start") then gameStateManager:setState('loadStage') end
 end
 
 
