@@ -224,7 +224,7 @@ return {
           rotation = 0,
           visible = true,
           properties = {
-            ["x"] = 2,
+            ["x"] = 5,
             ["y"] = 1,
             ["z"] = 1
           }

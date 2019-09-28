@@ -67,7 +67,7 @@
   <object id="15" name="PLAYER SPAWN" type="player" x="152" y="80" width="8" height="8"/>
   <object id="16" name="Exit" type="stageGate" x="152" y="48" width="8" height="8">
    <properties>
-    <property name="x" type="int" value="2"/>
+    <property name="x" type="int" value="5"/>
     <property name="y" type="int" value="1"/>
     <property name="z" type="int" value="1"/>
    </properties>
