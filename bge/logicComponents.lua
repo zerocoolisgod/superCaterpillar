@@ -11,6 +11,7 @@ local camera            = CAMERA
 local resourceManager   = RESMAN
 local gameData          = GAMDAT
 local overWorld         = OVRWLD
+local inputs						= INPUTS
 
 local logSys = {}
 
@@ -21,48 +22,6 @@ end
 
 
 function logSys:addInputs(ent)
-  ent.inputs = {
-    up    = {key = "w", held = false, pressed = false, released = false},
-    down  = {key = "s", held = false, pressed = false, released = false},
-    left  = {key = "a", held = false, pressed = false, released = false},
-    right = {key = "d", held = false, pressed = false, released = false},
-    btnA  = {key = "l", held = false, pressed = false, released = false},
-    btnB  = {key = "k", held = false, pressed = false, released = false},
-    btnX  = {key = "o", held = false, pressed = false, released = false},
-    btnY  = {key = "i", held = false, pressed = false, released = false},
-  }
-  
-  
-  function ent:setInput(inputs, key)
-    self.inputs[id].key = key
-  end
-  
-  
-  function ent:inputIsDown(ip)
-    return self.inputs[ip]["held"]
-  end
-  
-  
-  function ent:inputIsPressed(ip)
-    return self.inputs[ip]["pressed"]
-  end
-  
-  
-  function ent:inputIsReleased(ip)
-    return self.inputs[ip]["released"]
-  end  
-  
-  
-	ent:addLogSys(function(self, dt)
-    for k,v in pairs(self.inputs) do
-      local nowState = love.keyboard.isDown(self.inputs[k].key)
-      local held = self.inputs[k].held
-      self.inputs[k].pressed = nowState and not held
-      self.inputs[k].released = held and not nowState
-      self.inputs[k].held = nowState
-    end
-    
-	end)
 end
 
 

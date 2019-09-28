@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
--- Fruit Factory
+-- Bird Factory
 --
--- To Be Eaten
+-- Moves back and forth, Eats caterpiller
 
 
 -----------------------------
@@ -13,28 +13,23 @@ local camera            = CAMERA
 local resourceManager   = RESMAN
 local gameData          = GAMDAT
 local overWorld         = OVRWLD
+
 local logicComponents = require("bge.logicComponents")
 local renderComponents = require("bge.renderComponents")
 
 local ent = {}
 function ent:new(x, y, w, h, props)
-  local e = ENTSYS:newEnt(x, y, 8, 8)
-  local sheet = resourceManager:getImage("foodSheet")
+  local e = entitySystem:newEnt(x, y, 8, 8)
+  local sheet = resourceManager:getImage("smallEntSheet")
   
-  e:setId("fruit")
-  e:setGroup("fruit")
+  e:setId("bird")
+  e:setGroup("bird")
   
   logicComponents:addCollision(e, false)
-  renderComponents:addSprite(e, sheet, 8, 8, props.fruitType)
+  renderComponents:addSprite(e, sheet, 8, 8, 1)
 
   function e:onBump(o)
-    if o.group == "player" then 
-      local fCount = gameData:getData("levelFruit") or 1
-      fCount = fCount - 1
-      gameData:setData("levelFruit", fCount)
-      self.collidable = false
-      self.remove = true
-    end
+    if o.group == "player" then end
   end
 
   return e

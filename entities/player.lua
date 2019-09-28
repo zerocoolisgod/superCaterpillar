@@ -8,6 +8,7 @@ local camera            = CAMERA
 local resourceManager   = RESMAN
 local gameData          = GAMDAT
 local overWorld         = OVRWLD
+local inputs						= INPUTS
 
 local logicComponents = require("bge.logicComponents")
 local renderComponents = require("bge.renderComponents")
@@ -21,7 +22,6 @@ function ent:new(x,y)
   e:setId("player")
   e:setGroup("player")
   
-  logicComponents:addInputs(e)
   logicComponents:addMovement(e)
   logicComponents:addCollision(e, true)
 
@@ -54,10 +54,10 @@ function ent:new(x,y)
     function(self, dt)
       -- Exit State
       local nstate
-      if self:inputIsDown("up") then nstate = 'walk' end
-      if self:inputIsDown("down") then nstate = 'walk' end
-      if self:inputIsDown("left") then nstate = 'walk' end
-      if self:inputIsDown("right") then nstate = 'walk' end
+      if inputs:isDown("up") then nstate = 'walk' end
+      if inputs:isDown("down") then nstate = 'walk' end
+      if inputs:isDown("left") then nstate = 'walk' end
+      if inputs:isDown("right") then nstate = 'walk' end
       if nstate then self:setState(nstate) end
       
       local spdX, spdY = 0, 0
@@ -79,10 +79,10 @@ function ent:new(x,y)
       local spdX, spdY = 50, 50
       local accelX, accelY = 0.1, 0.1
       local dirX, dirY = 0, 0
-      if self:inputIsDown("up") then dirY = -1 end
-      if self:inputIsDown("down") then dirY = 1 end
-      if self:inputIsDown("left") then dirX = -1 end
-      if self:inputIsDown("right") then dirX = 1 end
+      if inputs:isDown("up") then dirY = -1 end
+      if inputs:isDown("down") then dirY = 1 end
+      if inputs:isDown("left") then dirX = -1 end
+      if inputs:isDown("right") then dirX = 1 end
       spdX = spdX * dirX
       spdY = spdY * dirY
 

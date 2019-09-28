@@ -8,8 +8,13 @@ return {
   height = 22,
   tilewidth = 8,
   tileheight = 8,
+<<<<<<< HEAD
   nextlayerid = 7,
   nextobjectid = 77,
+=======
+  nextlayerid = 8,
+  nextobjectid = 52,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
   backgroundcolor = { 16, 16, 16 },
   properties = {
     ["x"] = 1,
@@ -63,7 +68,7 @@ return {
         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
-        5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+        5, 5, 5, 5, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
@@ -100,6 +105,7 @@ return {
       encoding = "lua",
       data = {
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+<<<<<<< HEAD
         1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
         1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1,
         1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
@@ -120,6 +126,28 @@ return {
         1, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1,
         1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1,
         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+=======
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1,
+        1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1,
+        1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+        1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+        1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+        1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
       }
     },
@@ -139,10 +167,17 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
+<<<<<<< HEAD
           x = 144,
           y = 8,
           width = 24,
           height = 40,
+=======
+          x = 32,
+          y = 136,
+          width = 88,
+          height = 32,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           rotation = 0,
           visible = true,
           properties = {}
@@ -152,10 +187,10 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
-          x = 0,
-          y = 0,
+          x = 8,
+          y = 40,
           width = 8,
-          height = 176,
+          height = 32,
           rotation = 0,
           visible = true,
           properties = {}
@@ -165,9 +200,9 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
-          x = 8,
+          x = 120,
           y = 168,
-          width = 312,
+          width = 64,
           height = 8,
           rotation = 0,
           visible = true,
@@ -178,10 +213,10 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
-          x = 312,
-          y = 0,
+          x = 288,
+          y = 24,
           width = 8,
-          height = 168,
+          height = 128,
           rotation = 0,
           visible = true,
           properties = {}
@@ -191,9 +226,9 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
-          x = 8,
-          y = 0,
-          width = 304,
+          x = 224,
+          y = 8,
+          width = 56,
           height = 8,
           rotation = 0,
           visible = true,
@@ -205,7 +240,11 @@ return {
           type = "player",
           shape = "rectangle",
           x = 152,
+<<<<<<< HEAD
           y = 80,
+=======
+          y = 152,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           width = 8,
           height = 8,
           rotation = 0,
@@ -249,10 +288,17 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
+<<<<<<< HEAD
           x = 96,
           y = 8,
           width = 32,
           height = 16,
+=======
+          x = 80,
+          y = 96,
+          width = 64,
+          height = 32,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           rotation = 0,
           visible = true,
           properties = {}
@@ -262,10 +308,17 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
+<<<<<<< HEAD
           x = 40,
           y = 152,
           width = 24,
           height = 8,
+=======
+          x = 184,
+          y = 128,
+          width = 32,
+          height = 40,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           rotation = 0,
           visible = true,
           properties = {}
@@ -275,10 +328,17 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
+<<<<<<< HEAD
           x = 8,
           y = 8,
           width = 16,
           height = 16,
+=======
+          x = 16,
+          y = 72,
+          width = 16,
+          height = 64,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           rotation = 0,
           visible = true,
           properties = {}
@@ -288,10 +348,17 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
+<<<<<<< HEAD
           x = 64,
           y = 112,
           width = 16,
           height = 48,
+=======
+          x = 40,
+          y = 72,
+          width = 32,
+          height = 56,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           rotation = 0,
           visible = true,
           properties = {}
@@ -301,10 +368,17 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
+<<<<<<< HEAD
           x = 24,
           y = 112,
           width = 16,
           height = 48,
+=======
+          x = 160,
+          y = 96,
+          width = 48,
+          height = 32,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           rotation = 0,
           visible = true,
           properties = {}
@@ -314,8 +388,39 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
+<<<<<<< HEAD
           x = 184,
           y = 8,
+=======
+          x = 208,
+          y = 64,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 25,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 120,
+          y = 24,
+          width = 88,
+          height = 64,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 26,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 80,
+          y = 80,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           width = 32,
           height = 16,
           rotation = 0,
@@ -323,6 +428,7 @@ return {
           properties = {}
         },
         {
+<<<<<<< HEAD
           id = 25,
           name = "",
           type = "wall",
@@ -349,14 +455,23 @@ return {
           properties = {}
         },
         {
+=======
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           id = 27,
           name = "",
           type = "wall",
           shape = "rectangle",
+<<<<<<< HEAD
           x = 88,
           y = 96,
           width = 16,
           height = 48,
+=======
+          x = 56,
+          y = 40,
+          width = 64,
+          height = 32,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           rotation = 0,
           visible = true,
           properties = {}
@@ -366,6 +481,7 @@ return {
           name = "",
           type = "wall",
           shape = "rectangle",
+<<<<<<< HEAD
           x = 208,
           y = 96,
           width = 16,
@@ -472,6 +588,10 @@ return {
           shape = "rectangle",
           x = 48,
           y = 40,
+=======
+          x = 48,
+          y = 32,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           width = 8,
           height = 8,
           rotation = 0,
@@ -479,6 +599,7 @@ return {
           properties = {}
         },
         {
+<<<<<<< HEAD
           id = 37,
           name = "",
           type = "wall",
@@ -519,10 +640,14 @@ return {
         },
         {
           id = 40,
+=======
+          id = 29,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           name = "",
           type = "wall",
           shape = "rectangle",
           x = 40,
+<<<<<<< HEAD
           y = 112,
           width = 8,
           height = 8,
@@ -562,6 +687,8 @@ return {
           type = "wall",
           shape = "rectangle",
           x = 8,
+=======
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           y = 24,
           width = 8,
           height = 8,
@@ -570,6 +697,7 @@ return {
           properties = {}
         },
         {
+<<<<<<< HEAD
           id = 44,
           name = "",
           type = "wall",
@@ -783,6 +911,13 @@ return {
           type = "wall",
           shape = "rectangle",
           x = 256,
+=======
+          id = 31,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 16,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           y = 32,
           width = 8,
           height = 8,
@@ -791,6 +926,7 @@ return {
           properties = {}
         },
         {
+<<<<<<< HEAD
           id = 61,
           name = "",
           type = "wall",
@@ -848,6 +984,13 @@ return {
           type = "wall",
           shape = "rectangle",
           x = 304,
+=======
+          id = 32,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 24,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           y = 24,
           width = 8,
           height = 8,
@@ -856,6 +999,7 @@ return {
           properties = {}
         },
         {
+<<<<<<< HEAD
           id = 66,
           name = "",
           type = "wall",
@@ -901,6 +1045,14 @@ return {
           shape = "rectangle",
           x = 120,
           y = 144,
+=======
+          id = 33,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 208,
+          y = 16,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           width = 16,
           height = 8,
           rotation = 0,
@@ -908,6 +1060,7 @@ return {
           properties = {}
         },
         {
+<<<<<<< HEAD
           id = 70,
           name = "",
           type = "wall",
@@ -928,12 +1081,22 @@ return {
           x = 184,
           y = 128,
           width = 8,
+=======
+          id = 34,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 232,
+          y = 24,
+          width = 40,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           height = 16,
           rotation = 0,
           visible = true,
           properties = {}
         },
         {
+<<<<<<< HEAD
           id = 72,
           name = "",
           type = "wall",
@@ -979,6 +1142,14 @@ return {
           shape = "rectangle",
           x = 256,
           y = 112,
+=======
+          id = 35,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 272,
+          y = 32,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
           width = 8,
           height = 8,
           rotation = 0,
@@ -986,6 +1157,7 @@ return {
           properties = {}
         },
         {
+<<<<<<< HEAD
           id = 76,
           name = "",
           type = "wall",
@@ -993,6 +1165,198 @@ return {
           x = 272,
           y = 112,
           width = 8,
+          height = 8,
+=======
+          id = 36,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 216,
+          y = 32,
+          width = 8,
+          height = 24,
+>>>>>>> d1dcfe952c780b73a8e1b5afeb542bd0af6e1517
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 37,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 224,
+          y = 32,
+          width = 8,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 38,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 232,
+          y = 40,
+          width = 16,
+          height = 64,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 39,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 280,
+          y = 64,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 40,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 280,
+          y = 120,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 41,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 224,
+          y = 104,
+          width = 16,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 42,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 248,
+          y = 72,
+          width = 40,
+          height = 48,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 43,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 208,
+          y = 104,
+          width = 8,
+          height = 24,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 44,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 240,
+          y = 104,
+          width = 8,
+          height = 24,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 45,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 216,
+          y = 144,
+          width = 24,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 46,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 240,
+          y = 152,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 47,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 280,
+          y = 152,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 48,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 240,
+          y = 160,
+          width = 48,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 49,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 280,
+          y = 16,
+          width = 8,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 51,
+          name = "",
+          type = "wall",
+          shape = "rectangle",
+          x = 80,
+          y = 128,
+          width = 40,
           height = 8,
           rotation = 0,
           visible = true,

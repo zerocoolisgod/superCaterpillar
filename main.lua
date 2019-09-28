@@ -38,6 +38,7 @@ function love.load(arg)
   RESMAN = require("bge.resourceManager")
   GAMDAT = require("bge.gameData")
   OVRWLD = require("bge.overworldMap")
+  INPUTS = require("bge.inputManager")
 
   -- Other Imports
   require("bge.gameMath")
@@ -67,6 +68,7 @@ end
 -- Main Loop
 -------------------------------------------------------------------------------
 function love.update(dt)
+  INPUTS:update()
   GSTMAN:updateState(dt)
   CAMERA:update(dt)
 end
