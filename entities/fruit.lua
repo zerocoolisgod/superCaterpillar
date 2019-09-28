@@ -82,7 +82,7 @@ function ent:new(x, y, w, h, props)
     function(self, dt) --Update
       -- Movement
       local spdX, spdY = 35, 35
-      local accelX, accelY = 0.1, 0.1
+      local accelX, accelY = 1, 1
       local dir = self.dirs[self.heading]
       
       spdX = spdX * dir.x
@@ -91,7 +91,7 @@ function ent:new(x, y, w, h, props)
       self:move(spdX, spdY, accelX, accelY, dt)
     end)
   
-  self:setState("changeDir")
+  e:setState("changeDir")
   return e
 end
 return ent
